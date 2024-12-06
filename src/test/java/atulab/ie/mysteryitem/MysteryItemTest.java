@@ -17,7 +17,7 @@ class MysteryItemTest {
 	 */
 	@Test
 	final void testGetName() {
-        MysteryItem item = new MysteryItem();
+        MysteryItem item = new MysteryItem(null, null);
         item.setName("Ancient Amulet");
         String name = item.getName();
         assertEquals("Ancient Amulet", name);
@@ -27,7 +27,7 @@ class MysteryItemTest {
 	 */
 	@Test
 	final void testSetName() {
-        MysteryItem item = new MysteryItem();
+        MysteryItem item = new MysteryItem(null, null);
         item.setName("Silver Sword");
         String name = item.getName();
         assertEquals("Silver Sword", name);
@@ -38,7 +38,7 @@ class MysteryItemTest {
 	@Test
 	final void testToString() {
 		
-        MysteryItem item = new MysteryItem();
+        MysteryItem item = new MysteryItem(null, null);
         item.setName("Silver Sword");
         String toStringOutput = item.toString();
         assertTrue(toStringOutput.contains("Silver Sword"));
